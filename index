@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubbly Bliss Sparkling Water</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0f7fa 0%, #b2ebf2 100%);
+            margin: 0;
+            padding: 0;
+            color: #224455;
+        }
+        header {
+            background-color: #00b8d4;
+            color: #fff;
+            padding: 2em 0 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 6px #b2ebf2;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 2em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: #fff;
+            padding: 3em 1em 4em 1em;
+            text-align: center;
+            margin-bottom: 0;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.4em;
+            text-shadow: 1px 2px 10px #007c91;
+        }
+        .hero p {
+            font-size: 1.4em;
+            margin-bottom: 1.5em;
+            text-shadow: 1px 1px 10px #0288a7;
+        }
+        .btn-main {
+            padding: 0.8em 2em;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.1em;
+            background: #00e5ff;
+            color: #005268;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-main:hover {
+            background: #00bcd4;
+            color: #fff;
+        }
+        section {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #fafcffcc;
+            border-radius: 20px;
+            box-shadow: 0 3px 16px #bee8f4;
+        }
+        .flavors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        .flavor-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 6px #c7e9f7;
+            padding: 1em;
+            min-width: 210px;
+            max-width: 250px;
+            text-align: center;
+        }
+        .flavor-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 0.6em;
+            border-radius: 50%;
+            background: #e0f7fa;
+            border: 2px solid #b2ebf2;
+        }
+        .flavor-card h3 {
+            margin-top: 0.4em;
+            margin-bottom: 0.3em;
+            color: #0097a7;
+        }
+        .about, .contact {
+            margin-top: 2.2em;
+        }
+        .about h2, .contact h2, .flavors-header {
+            color: #00838f;
+            text-align: center;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 420px;
+            margin: 2em auto 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.7em;
+            border-radius: 8px;
+            border: 1px solid #b2ebf2;
+            font-size: 1em;
+        }
+        .contact-form button {
+            align-self: flex-start;
+            padding: 0.7em 2em;
+            background: #00b8d4;
+            color: #fff;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #00838f;
+        }
+        footer {
+            background: #00b8d4;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0 0.8em 0;
+            margin-top: 3em;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        @media (max-width: 700px) {
+            .hero {
+                padding: 2em 0.5em 3em 0.5em;
+            }
+            section {
+                padding: 1em;
+            }
+            .flavors {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bubbly Bliss Sparkling Water</h1>
+        <nav>
+            <a href="#flavors">Flavors</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Pure Hydration, Refreshing Fizz!</h1>
+        <p>
+            Discover the sparkling sensation that's just as crisp as it is clean.<br>
+            Zero calories. Zero sugar. Zero regrets.
+        </p>
+        <a href="#flavors"><button class="btn-main">Try Our Flavors</button></a>
+    </div>
+    
+    <section id="flavors">
+        <div class="flavors-header">
+            <h2>Our Flavors</h2>
+            <p>All natural, delightfully bubbly. Which will you try first?</p>
+        </div>
+        <div class="flavors">
+            <div class="flavor-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Lemon Zest">
+                <h3>Lemon Zest</h3>
+                <p>Bright, tangy citrus with an uplifting fizz for a sunny refresh.</p>
+            </div>
+            <div class="flavor-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/590/590682.png" alt="Berry Splash">
+                <h3>Berry Splash</h3>
+                <p>A vibrant blend of strawberry, blueberry, and raspberry bubbles.</p>
+            </div>
+            <div class="flavor-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/590/590687.png" alt="Cucumber Mint">
+                <h3>Cucumber Mint</h3>
+                <p>Super crisp, cool cucumber with a hint of fresh garden mint.</p>
+            </div>
+            <div class="flavor-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/590/590689.png" alt="Grapefruit Twist">
+                <h3>Grapefruit Twist</h3>
+                <p>Bittersweet grapefruit sparkling with a subtle citrus aroma.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Bubbly Bliss</h2>
+        <p style="max-width: 640px; margin: auto; font-size: 1.1em;">
+            At Bubbly Bliss, we're passionate about bringing you pure, sparkling refreshment with a touch of natural flavor—absolutely no sugar, sweeteners, or calories. Proudly sourced and crafted locally, we care about our water as much as you care about your well-being. Cheers to clean hydration!
+        </p>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" autocomplete="off" onsubmit="event.preventDefault(); alert('Thank you for contacting Bubbly Bliss!');">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="email" required>
+            <textarea rows="4" placeholder="Your Message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Bubbly Bliss Sparkling Water • Stay Hydrated, Stay Sparkling!
+    </footer>
+</body>
+</html>
+
